@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo_iPhone_loadBalancing_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-LW-OV9">
+                                <rect key="frame" x="10" y="104" width="150" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Xgd-ct-QLy"/>
+                                    <constraint firstAttribute="width" constant="150" id="xHC-t6-FtO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="..."/>
+                                <connections>
+                                    <action selector="onButton2:" destination="BYZ-38-t0r" eventType="touchDown" id="WbR-wM-fLe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1U-zR-QZR" userLabel="Status">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ipi-YK-PKS"/>
+                                </constraints>
+                                <string key="text" base64-UTF8="YES">
+CQ
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" pagingEnabled="YES" indicatorStyle="black" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-ez-rml" userLabel="Log">
+                                <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                                <color key="backgroundColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BKY-4l-jAa"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3o-ar-oOq" userLabel="Button 1">
+                                <rect key="frame" x="276" y="104" width="128" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="57e-xF-wym"/>
+                                    <constraint firstAttribute="width" constant="128" id="Err-x1-i7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="...">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButton:" destination="BYZ-38-t0r" eventType="touchDown" id="t4s-v2-Q7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d1U-zR-QZR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="06G-4x-cMG"/>
+                            <constraint firstAttribute="trailing" secondItem="d1U-zR-QZR" secondAttribute="trailing" id="2kl-KE-KVf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C2q-ez-rml" secondAttribute="bottom" id="Aeb-hC-nGm"/>
+                            <constraint firstItem="d1U-zR-QZR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Erv-zU-igw"/>
+                            <constraint firstItem="rVX-LW-OV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Lxm-Ss-fDp"/>
+                            <constraint firstItem="rVX-LW-OV9" firstAttribute="top" secondItem="d1U-zR-QZR" secondAttribute="bottom" constant="10" id="Nk1-xe-Pyi"/>
+                            <constraint firstAttribute="trailing" secondItem="z3o-ar-oOq" secondAttribute="trailing" constant="10" id="Uv9-6W-rJU"/>
+                            <constraint firstItem="C2q-ez-rml" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gdb-e1-bpR"/>
+                            <constraint firstItem="z3o-ar-oOq" firstAttribute="top" secondItem="d1U-zR-QZR" secondAttribute="bottom" constant="10" id="i0b-ry-Fb1"/>
+                            <constraint firstAttribute="trailing" secondItem="C2q-ez-rml" secondAttribute="trailing" id="voy-Ym-UNg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="z3o-ar-oOq" id="Zwv-yU-Xar"/>
+                        <outlet property="button2" destination="rVX-LW-OV9" id="PvT-pr-V2t"/>
+                        <outlet property="logText" destination="C2q-ez-rml" id="sUE-Yp-210"/>
+                        <outlet property="statusLabel" destination="d1U-zR-QZR" id="rmb-rk-eTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+</document>
